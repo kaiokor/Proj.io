@@ -1,8 +1,14 @@
-function App() {
-  
+import EstilosGlobais from "./Componente/EstilosGlobais"
+import Nav from "./Componente/nav"
 
+function App() {
   return (
-    <p>teste</p>
+    <>
+      <EstilosGlobais></EstilosGlobais>
+      <Nav/>
+      
+    
+    </>
   )
 }
 
