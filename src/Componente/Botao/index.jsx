@@ -12,6 +12,8 @@ const BotaoEstilizado = styled.button`
     box-shadow: 6px 5px 4px rgba(0,0,0,0.25);
     font-family: sans-serif;
     color: white;
+    cursor: pointer;
+    font-size:24px;
 `
 
 const Botao = ({ children }) =>{

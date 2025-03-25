@@ -4,7 +4,6 @@ import Botao from "../Botao";
 
 
 const NavEstilizada = styled.div`
-
     display: flex;
     align-items:center;
     max-width:1105px;
