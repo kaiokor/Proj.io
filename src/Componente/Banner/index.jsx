@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import InputPesquisa from "../InputTexto";
+import InputPesquisa from "../InputPesquisa";
 
 const BannerEstilizado = styled.div`
     
