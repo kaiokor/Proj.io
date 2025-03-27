@@ -43,7 +43,7 @@ const PaginaLogin = () => {
                     <InputPadrao type="password"></InputPadrao>
                 </DivLabel>
                 <DivBotao>
-                    <Link to='/' style={{ textDecoration: "none"}}>
+                    <Link to='/Projeto' style={{ textDecoration: "none"}}>
                         <Botao style={{ position: "left" }}>Acessar</Botao>
                     </Link>
                 </DivBotao>
