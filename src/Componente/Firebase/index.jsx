@@ -45,12 +45,22 @@ export const checkLink = async (projCollection, getLink) => {
   return false;
 };
 
-const getProjects = async (data) => {
-  let link = "";
+// Retorna os dados do projeto conectado ao link
+export const getInfoProject = async (projCollection, getLink) => {
+  let link = {};
+
+  const linkQuery = query(
+    projCollection,
+    where("Link", "==", getLink),
+    limit(1)
+  );
+
+  const data = await getDocs(linkQuery);
 
   data.forEach((doc) => {
     console.log(doc.id, " => ", doc.data());
     link = doc.data();
-    console.log("ATENÇÃO! Resultado da pesquisa: " + link);
   });
+
+  return link;
 };
